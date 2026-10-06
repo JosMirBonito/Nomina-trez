@@ -1,0 +1,59 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[build.processing.html]
+  pretty_urls = true
+
+# ---------- Links cortos (compartibles en bio / tarjetas) ----------
+[[redirects]]
+  from = "/whatsapp"
+  to = "https://wa.me/51992393169?text=Hola%20N%C3%BAmina%2C%20quiero%20agendar%20una%20cita"
+  status = 302
+
+[[redirects]]
+  from = "/instagram"
+  to = "https://www.instagram.com/numinatattoostudio/"
+  status = 302
+
+[[redirects]]
+  from = "/tiktok"
+  to = "https://www.tiktok.com/@numinatattoostudio"
+  status = 302
+
+[[redirects]]
+  from = "/facebook"
+  to = "https://www.facebook.com/Numinacollective/"
+  status = 302
+
+[[redirects]]
+  from = "/mapa"
+  to = "https://maps.app.goo.gl/grkZxQKwsGvyKYrw5"
+  status = 302
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+# ---------- Seguridad ----------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; script-src 'self' https://cdnjs.cloudflare.com https://unpkg.com; frame-src https://www.google.com; connect-src 'self'; form-action 'self'"
+
+# ---------- Caché ----------
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

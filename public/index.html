@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NÚMINA Tattoo Studio · Tatuajes personalizados en Lima</title>
+<meta name="description" content="Estudio de tatuajes profesional en Lima. Diseños personalizados, fine line, blackwork, realismo y más. Bioseguridad certificada. Cotiza y agenda por WhatsApp.">
+<meta name="theme-color" content="#0e0c0a">
+<link rel="canonical" href="https://numina-tattoo.netlify.app/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/favicon.svg">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta property="og:title" content="NÚMINA Tattoo Studio · Lima">
+<meta property="og:description" content="Arte con intención sobre tu piel. Diseños personalizados y bioseguridad certificada.">
+<meta property="og:url" content="https://numina-tattoo.netlify.app/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css?v=5">
+<script src="/assets/boot.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="/assets/app.js?v=5" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"TattooParlor","name":"NÚMINA Tattoo Studio","url":"https://numina-tattoo.netlify.app/","telephone":"+51992393169","address":{"@type":"PostalAddress","addressLocality":"Lima","addressCountry":"PE"},"hasMap":"https://maps.app.goo.gl/grkZxQKwsGvyKYrw5","priceRange":"$$","sameAs":["https://www.instagram.com/numinatattoostudio/","https://www.tiktok.com/@numinatattoostudio","https://www.facebook.com/Numinacollective/"]}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<!-- preloader -->
+<div class="loader" aria-hidden="true">
+  <span class="lbl">Tattoo Studio — Lima</span>
+  <div class="row">
+    <div class="word"><span>N</span><span class="ac">Ú</span><span>M</span><span>I</span><span>N</span><span>A</span></div>
+    <div class="count">0</div>
+  </div>
+</div>
+
+<div class="cur" aria-hidden="true"></div><div class="cur-r" aria-hidden="true"></div>
+
+<!-- art library (reused in hover preview + mobile) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="s-fine" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M50 15c-8 10-8 20 0 28 8-8 8-18 0-28zM50 43c-12-6-24-2-28 8 12 4 22 0 28-8zM50 43c12-6 24-2 28 8-12 4-22 0-28-8zM50 43v45M50 65c-6-4-12-4-16 0M50 72c6-4 12-4 16 0"/></g></symbol>
+  <symbol id="s-black" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="50" cy="50" r="30"/><path d="M50 20v60M20 50h60M29 29l42 42M71 29L29 71"/><circle cx="50" cy="50" r="10" fill="currentColor"/></g></symbol>
+  <symbol id="s-geo" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><path d="M50 12l9 26h27l-22 16 9 26-23-16-23 16 9-26-22-16h27z"/><circle cx="50" cy="50" r="38"/><circle cx="50" cy="50" r="44" stroke-dasharray="1 4"/></g></symbol>
+  <symbol id="s-neo" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M30 40c0-12 10-20 20-20s20 8 20 20c0 16-20 22-20 40 0-18-20-24-20-40z"/><path d="M40 36c4-6 16-6 20 0M38 46c8 4 16 4 24 0M20 84c10-6 20-6 30 0s20 6 30 0"/></g></symbol>
+  <symbol id="s-real" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M30 70c-6-20 4-46 20-50 16 4 26 30 20 50-6 10-34 10-40 0z"/><circle cx="41" cy="48" r="6"/><circle cx="59" cy="48" r="6"/><path d="M50 56l-4 8h8zM40 72v6M47 73v6M53 73v6M60 72v6"/></g></symbol>
+  <symbol id="s-bot" viewBox="0 0 100 100"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M20 80c10-30 30-50 60-50-4 30-24 50-60 50z"/><path d="M20 80c16-14 30-26 44-36M36 70c-2-6-2-12 0-16M50 60c0-6 2-10 4-14"/></g></symbol>
+</svg>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#top" data-hover>N<span class="ac">Ú</span>MINA</a>
+  <nav class="links" aria-label="Principal">
+    <a href="#estudio"><span data-t="Estudio">Estudio</span></a>
+    <a href="#estilos"><span data-t="Estilos">Estilos</span></a>
+    <a href="#proceso"><span data-t="Proceso">Proceso</span></a>
+    <a href="#redes"><span data-t="Redes">Redes</span></a>
+    <a href="#faq"><span data-t="FAQ">FAQ</span></a>
+    <a href="#visitanos"><span data-t="Contacto">Contacto</span></a>
+  </nav>
+  <a class="btn cta magnetic" href="#cotizar">Reservar <i>→</i></a>
+  <button class="burger" aria-expanded="false" aria-controls="menu">Menú</button>
+</header>
+<div class="menu" id="menu">
+  <a href="#estudio">Estudio <small>01</small></a>
+  <a href="#estilos">Estilos <small>02</small></a>
+  <a href="#proceso">Proceso <small>03</small></a>
+  <a href="#cotizar">Cotizar <small>04</small></a>
+  <a href="#redes">Redes <small>05</small></a>
+  <a href="#faq">FAQ <small>06</small></a>
+  <a href="#visitanos">Contacto <small>07</small></a>
+</div>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero" id="top">
+  <svg class="art" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width=".5" stroke-linecap="round" aria-hidden="true">
+    <path pathLength="1" d="M50 6c-14 0-24 12-19 25 5 11 20 12 27 4 7-9 0-20-10-17-7 2-7 12 0 12"/>
+    <path pathLength="1" d="M50 48v46"/>
+    <path pathLength="1" d="M50 72c-12-8-24-6-30 2 10 6 22 5 30-2zM50 62c12-8 23-6 29 0-10 7-20 7-29 0z"/>
+    <path pathLength="1" d="M44 40c-6 2-12 0-15-5M56 40c6 2 12 0 15-5"/>
+  </svg>
+  <div class="meta">
+    <div class="status lbl" id="status" aria-live="polite"><i></i><span>Atención con cita previa</span></div>
+    <span class="lbl">Lima — Perú</span>
+  </div>
+  <h1>
+    <span class="ln"><span>Arte con</span></span>
+    <span class="ln r"><span><em>intención</em></span></span>
+    <span class="ln"><span>sobre tu piel</span></span>
+  </h1>
+  <div class="foot">
+    <p>Diseños personalizados, técnica precisa y un espacio profesional donde cada detalle importa. Tu historia, tatuada con cuidado.</p>
+    <div><a class="btn fill magnetic" href="#cotizar">Cotizar mi tatuaje <i>→</i></a></div>
+    <a class="badge" href="#estudio" aria-label="Bajar" data-hover>
+      <svg viewBox="0 0 100 100"><defs><path id="bc" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text font-size="8.6" letter-spacing="3.4" fill="#8f877b" font-family="Jost,sans-serif"><textPath href="#bc">SCROLL · DESCUBRE · NÚMINA · </textPath></text></svg>
+      <b>↓</b>
+    </a>
+  </div>
+</section>
+
+<div class="marq" aria-hidden="true"><div class="t">
+  <span class="f">Fine line</span><span class="s">✦</span><span>Blackwork</span><span class="s">✦</span><span class="f">Realismo</span><span class="s">✦</span><span>Geométrico</span><span class="s">✦</span><span class="f">Botánico</span><span class="s">✦</span><span>Neo tradicional</span><span class="s">✦</span>
+  <span class="f">Fine line</span><span class="s">✦</span><span>Blackwork</span><span class="s">✦</span><span class="f">Realismo</span><span class="s">✦</span><span>Geométrico</span><span class="s">✦</span><span class="f">Botánico</span><span class="s">✦</span><span>Neo tradicional</span><span class="s">✦</span>
+</div></div>
+
+<!-- 01 ESTUDIO -->
+<section class="sec" id="estudio"><div class="wrap">
+  <div class="sh"><span class="lbl"><b>01</b> — El estudio</span><span></span></div>
+  <p class="manifesto">Un tatuaje es una decisión para toda la vida. Por eso cuidamos el proceso completo — desde la primera idea hasta la cicatrización — con diseño propio, higiene impecable y un equipo que trabaja con <span class="ac">intención.</span></p>
+  <div class="pillars">
+    <div class="pillar rv"><span class="n">(01)</span><h3>Diseño propio</h3><p>Trabajamos tu idea contigo para crear algo realmente tuyo.</p></div>
+    <div class="pillar rv"><span class="n">(02)</span><h3>Bioseguridad</h3><p>Material descartable, esterilización y protocolos en cada sesión.</p></div>
+    <div class="pillar rv"><span class="n">(03)</span><h3>Artistas</h3><p>Precisión, calidad y una experiencia cómoda de principio a fin.</p></div>
+    <div class="pillar rv"><span class="n">(04)</span><h3>Seguimiento</h3><p>Te guiamos en la cicatrización para que luzca perfecto.</p></div>
+  </div>
+</div></section>
+
+<div class="wrap"><div class="stats">
+  <div class="stat"><b><span class="cnt" data-to="100">100</span><sup>%</sup></b><span class="lbl">Material descartable</span></div>
+  <div class="stat"><b><span class="cnt" data-to="24">24</span><sup>h</sup></b><span class="lbl">Tiempo de respuesta</span></div>
+  <div class="stat"><b><span class="cnt" data-to="6">6</span><sup>+</sup></b><span class="lbl">Estilos dominados</span></div>
+  <div class="stat"><b><span class="cnt" data-to="1">1</span><sup>/1</sup></b><span class="lbl">Diseño único por piel</span></div>
+</div></div>
+
+<!-- 02 ESTILOS -->
+<section class="sec" id="estilos"><div class="wrap">
+  <div class="sh"><span class="lbl"><b>02</b> — Estilos</span><h2 class="split">Lo que tatuamos</h2></div>
+  <div class="list" id="list">
+    <a class="row" href="#cotizar" data-s="s-fine"><span class="n">01</span><h3>Fine Line</h3><p>Trazos delicados y minimalistas</p><span class="ar">→</span><svg class="mob"><use href="#s-fine"/></svg></a>
+    <a class="row" href="#cotizar" data-s="s-black"><span class="n">02</span><h3>Blackwork</h3><p>Negro sólido, geometría y fuerza</p><span class="ar">→</span><svg class="mob"><use href="#s-black"/></svg></a>
+    <a class="row" href="#cotizar" data-s="s-real"><span class="n">03</span><h3>Realismo</h3><p>Sombras, texturas y retratos</p><span class="ar">→</span><svg class="mob"><use href="#s-real"/></svg></a>
+    <a class="row" href="#cotizar" data-s="s-geo"><span class="n">04</span><h3>Geométrico</h3><p>Simetría, mandalas y dotwork</p><span class="ar">→</span><svg class="mob"><use href="#s-geo"/></svg></a>
+    <a class="row" href="#cotizar" data-s="s-neo"><span class="n">05</span><h3>Neo Tradicional</h3><p>Color vibrante y líneas firmes</p><span class="ar">→</span><svg class="mob"><use href="#s-neo"/></svg></a>
+    <a class="row" href="#cotizar" data-s="s-bot"><span class="n">06</span><h3>Botánico</h3><p>Flores, hojas y naturaleza</p><span class="ar">→</span><svg class="mob"><use href="#s-bot"/></svg></a>
+  </div>
+  <p class="note">Trabajos reales en <a href="/instagram" target="_blank" rel="noopener">@numinatattoostudio</a></p>
+</div></section>
+<div class="float" id="float" aria-hidden="true">
+  <svg data-s="s-fine"><use href="#s-fine"/></svg><svg data-s="s-black"><use href="#s-black"/></svg><svg data-s="s-real"><use href="#s-real"/></svg>
+  <svg data-s="s-geo"><use href="#s-geo"/></svg><svg data-s="s-neo"><use href="#s-neo"/></svg><svg data-s="s-bot"><use href="#s-bot"/></svg>
+</div>
+
+<!-- 03 PROCESO (horizontal) -->
+<section class="sec hz" id="proceso">
+  <div class="track">
+    <div class="panel intro"><span class="lbl"><b style="color:var(--fg);font-weight:400">03</b> — Proceso</span><h2 style="margin-top:24px">De la idea<br>a tu <span class="it">piel</span></h2><p>Cuatro pasos, cero improvisación.</p></div>
+    <div class="panel"><span class="lbl">Paso uno</span><div><h3>Cuéntanos</h3><p>Envíanos tu idea, una referencia y la zona del cuerpo.</p></div><span class="big">1</span></div>
+    <div class="panel"><span class="lbl">Paso dos</span><div><h3>Diseñamos</h3><p>Creamos una propuesta única y la ajustamos contigo.</p></div><span class="big">2</span></div>
+    <div class="panel"><span class="lbl">Paso tres</span><div><h3>Tatuamos</h3><p>Sesión cómoda, segura y con material descartable.</p></div><span class="big">3</span></div>
+    <div class="panel"><span class="lbl">Paso cuatro</span><div><h3>Cuidamos</h3><p>Seguimiento y guía de cicatrización incluida.</p></div><span class="big">4</span></div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="sec" id="opiniones"><div class="wrap quote">
+  <span class="lbl">Opiniones</span>
+  <blockquote id="q"><span>“Escucharon mi idea y la convirtieron en algo mucho mejor de lo que imaginé.”</span></blockquote>
+  <div class="lbl who" id="qw">— Cliente de Númina</div>
+  <div class="dots" id="qd"></div>
+</div></section>
+
+<!-- 04 COTIZAR -->
+<section class="sec" id="cotizar"><div class="wrap book">
+  <aside>
+    <span class="lbl"><b style="color:var(--fg);font-weight:400">04</b> — Cotiza sin compromiso</span>
+    <h2 class="split">Cuéntanos tu <span class="it">idea</span></h2>
+    <p>Completa el formulario y te respondemos por WhatsApp con una propuesta y un precio estimado.</p>
+    <ul>
+      <li><span>Respuesta</span><span>Menos de 24 h</span></li>
+      <li><span>Diseño</span><span>Original, solo para ti</span></li>
+      <li><span>Referencias</span><span>Adjunta una imagen</span></li>
+    </ul>
+  </aside>
+  <form class="f" name="cotizacion" method="POST" action="/gracias" data-netlify="true" netlify-honeypot="empresa" enctype="multipart/form-data">
+    <input type="hidden" name="form-name" value="cotizacion">
+    <p class="hp"><label>No llenar: <input name="empresa"></label></p>
+    <div class="fld"><input id="f-n" name="nombre" required autocomplete="name" placeholder=" "><label for="f-n">Nombre</label></div>
+    <div class="fld"><input id="f-w" name="whatsapp" type="tel" required autocomplete="tel" placeholder=" "><label for="f-w">WhatsApp</label></div>
+    <div class="fld sel"><select id="f-e" name="estilo"><option>No estoy seguro/a</option><option>Fine Line</option><option>Blackwork</option><option>Realismo</option><option>Geométrico</option><option>Neo Tradicional</option><option>Botánico</option><option>Cover up</option></select><label for="f-e">Estilo</label></div>
+    <div class="fld sel"><select id="f-t" name="tamano"><option>Pequeño (&lt; 5 cm)</option><option>Mediano (5–15 cm)</option><option>Grande (15–30 cm)</option><option>Manga / espalda</option></select><label for="f-t">Tamaño</label></div>
+    <div class="fld full"><input id="f-z" name="zona" placeholder=" "><label for="f-z">Zona del cuerpo</label></div>
+    <div class="fld full"><textarea id="f-i" name="idea" required placeholder=" "></textarea><label for="f-i">Describe tu idea</label></div>
+    <label class="drop" id="drop" data-hover><span class="plus">+</span><span class="dt">Adjunta una referencia — arrastra o toca (máx. 8 MB)</span><input type="file" name="referencia" accept="image/*"><img alt="Vista previa"></label>
+    <label class="check"><input type="checkbox" name="mayor_edad" required> Confirmo que soy mayor de 18 años.</label>
+    <button class="btn fill send magnetic" type="submit">Enviar cotización <i>→</i></button>
+  </form>
+</div></section>
+
+<!-- REDES -->
+<section class="sec" id="redes" style="padding-top:0"><div class="wrap">
+  <div class="sh"><span class="lbl"><b>—</b> Síguenos</span><h2 class="split">Encuéntranos en <span class="it">redes</span></h2></div>
+  <div class="soc">
+    <a class="sc rv" style="--c:#e1306c" href="/instagram" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></span><span class="lbl">Instagram</span><b>@numinatattoostudio</b><em>Ver trabajos ↗</em></a>
+    <a class="sc rv" style="--c:#ff0050" href="/tiktok" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2.3 1.7 3.8 4 4v3c-1.5 0-2.8-.4-4-1.2V15a6 6 0 1 1-6-6v3.1A3 3 0 1 0 13 15V3h3z"/></svg></span><span class="lbl">TikTok</span><b>@numinatattoostudio</b><em>Ver videos ↗</em></a>
+    <a class="sc rv" style="--c:#25d366" href="/whatsapp" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.2z"/></svg></span><span class="lbl">WhatsApp</span><b>+51 992 393 169</b><em>Escribir ahora ↗</em></a>
+    <a class="sc rv" style="--c:#1877f2" href="/facebook" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.5V11H7v4h3v7h4v-7h3l1-4h-4V8.8c0-.5.3-.8 1-.8z"/></svg></span><span class="lbl">Facebook</span><b>Numina Collective</b><em>Visitar ↗</em></a>
+  </div>
+</div></section>
+
+<!-- 05 FAQ -->
+<section class="sec" id="faq"><div class="wrap">
+  <div class="sh"><span class="lbl"><b>05</b> — Preguntas</span><h2 class="split">Resolvemos tus dudas</h2></div>
+  <div class="faq">
+    <details><summary><small>01</small>¿Cuánto cuesta un tatuaje?<b></b></summary><div class="ans"><p>Depende del tamaño, detalle, zona y tiempo de sesión. Envíanos tu idea en el formulario y te damos un estimado sin compromiso.</p></div></details>
+    <details><summary><small>02</small>¿Necesito dejar un adelanto?<b></b></summary><div class="ans"><p>Sí, para reservar tu fecha pedimos un adelanto que se descuenta del precio final. Te lo explicamos al confirmar tu cita.</p></div></details>
+    <details><summary><small>03</small>¿Duele mucho?<b></b></summary><div class="ans"><p>Depende de la zona y de cada persona. Trabajamos a tu ritmo, con pausas cuando las necesites.</p></div></details>
+    <details><summary><small>04</small>¿Cómo me preparo para la sesión?<b></b></summary><div class="ans"><p>Duerme bien, come antes de venir, hidrata tu piel los días previos y evita alcohol 24 h antes.</p></div></details>
+    <details><summary><small>05</small>¿Hacen cover up?<b></b></summary><div class="ans"><p>Sí. Envíanos una foto del tatuaje actual y evaluamos la mejor opción para cubrirlo o transformarlo.</p></div></details>
+    <details><summary><small>06</small>¿Tatúan a menores de edad?<b></b></summary><div class="ans"><p>No. Solo tatuamos a personas mayores de 18 años con documento de identidad.</p></div></details>
+  </div>
+</div></section>
+
+<!-- 06 UBICACIÓN -->
+<section class="sec" id="visitanos" style="padding-top:0"><div class="wrap">
+  <div class="sh"><span class="lbl"><b>06</b> — Visítanos</span><h2 class="split">Lima, con cita previa</h2></div>
+  <div class="loc">
+    <div>
+      <ul class="hours" id="hours">
+        <li data-d="1"><span>Lunes — Jueves</span><span>11:00 — 20:00</span></li>
+        <li data-d="5"><span>Viernes</span><span>11:00 — 21:00</span></li>
+        <li data-d="6"><span>Sábado</span><span>10:00 — 21:00</span></li>
+        <li data-d="0"><span>Domingo</span><span>Cerrado</span></li>
+      </ul>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:34px"><a class="btn magnetic" href="/mapa" target="_blank" rel="noopener">Cómo llegar <i>→</i></a><a class="btn magnetic" href="/whatsapp" target="_blank" rel="noopener">WhatsApp <i>→</i></a></div>
+    </div>
+    <a class="map" href="/mapa" target="_blank" rel="noopener" aria-label="Ver ubicación en Google Maps" data-view><span class="pin"></span><span class="tag">Númina</span><span class="lbl go">Google Maps ↗</span></a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="fcta">
+    <h2 class="split">¿Tienes una idea?<br>La hacemos <span class="it">arte.</span></h2>
+    <a class="bigbtn magnetic" href="/whatsapp" target="_blank" rel="noopener">Agendar<br>cita ↗</a>
+  </div>
+  <div class="fgrid">
+    <div><span class="lbl">Númina Tattoo Studio</span><p style="color:var(--mut);max-width:300px">Arte con intención sobre tu piel. Lima, Perú.</p></div>
+    <div><span class="lbl">Redes</span><a href="/instagram" target="_blank" rel="noopener">Instagram</a><a href="/tiktok" target="_blank" rel="noopener">TikTok</a><a href="/facebook" target="_blank" rel="noopener">Facebook</a></div>
+    <div><span class="lbl">Contacto</span><a href="/whatsapp" target="_blank" rel="noopener">+51 992 393 169</a><a href="/mapa" target="_blank" rel="noopener">Google Maps</a></div>
+    <div><span class="lbl">Estudio</span><a href="#estilos">Estilos</a><a href="#proceso">Proceso</a><a href="#faq">FAQ</a></div>
+  </div>
+  <div class="wordmark" aria-hidden="true"><span>N</span><span class="u">Ú</span><span>M</span><span>I</span><span>N</span><span>A</span></div>
+  <div class="legal"><span>© <span id="y">2026</span> Númina Tattoo Studio</span><a href="#top">Volver arriba ↑</a></div>
+</div></footer>
+
+<a class="fab" href="/whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.2z"/></svg></a>
+</body>
+</html>

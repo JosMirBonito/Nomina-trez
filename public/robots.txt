@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://numina-tattoo.netlify.app/sitemap.xml
